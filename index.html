@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Владимир Акробат - Профессиональный акробат</title>
+    <title>Kateryna Kolesnykova — Performance Artist</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,34 +11,52 @@
     <nav class="navbar">
         <div class="container">
             <div class="navbar-content">
-                <div class="logo">🎪 Владимир Акробат</div>
+                <div class="logo">Kateryna Kolesnykova</div>
                 <button class="burger-menu" id="burgerBtn" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" onclick="closeMenu()">Главная</a></li>
-                    <li><a href="#about" onclick="closeMenu()">Обо мне</a></li>
-                    <li><a href="#gallery" onclick="closeMenu()">Портфолио</a></li>
-                    <li><a href="#services" onclick="closeMenu()">Услуги</a></li>
-                    <li><a href="#contact" onclick="closeMenu()">Контакты</a></li>
+                    <li><a href="#promo" onclick="closeMenu()">Promo</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About me</a></li>
+                    <li><a href="#performance" onclick="closeMenu()">Performance</a></li>
+                    <li><a href="#photo" onclick="closeMenu()">Photo</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Promo Section -->
+    <section id="promo" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Потрясающие акробатические трюки</h1>
-                <p>Профессиональный акробат с 15-летним опытом выступлений</p>
-                <button class="btn btn-primary" onclick="scrollToSection('contact')">Заказать выступление</button>
-            </div>
-            <div class="hero-image">
-                <div class="placeholder-hero">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500'%3E%3Crect fill='%23007bff' width='400' height='500'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='24' font-family='Arial'%3EФото акробата%3C/text%3E%3C/svg%3E" alt="Акробат в действии">
+            <div class="hero-grid">
+                <div class="hero-video-panel">
+                    <div class="video-rotator">
+                        <video id="hero-video-3" class="hero-video" autoplay muted loop playsinline>
+                            <source src="videos/video-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="hero-video-2" class="hero-video" autoplay muted loop playsinline style="display: none;">
+                            <source src="videos/video-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="hero-video-1" class="hero-video" autoplay muted loop playsinline style="display: none;">
+                            <source src="videos/video-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <span class="eyebrow">Aerial artist · dancer · choreographer</span>
+                    <h1>Kateryna Kolesnykova</h1>
+                    <p>Modern circus, pole dance, silks and stage choreography designed for live events and immersive shows.</p>
+                    <div class="hero-meta">
+                        <span>15+ years experience</span>
+                        <span>Festival stages & brand projects</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">Book a show</button>
                 </div>
             </div>
         </div>
@@ -47,76 +65,88 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Обо мне</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Владимир Петров</h3>
-                    <p>Профессиональный акробат с более чем 15 годами опыта. Выступал на крупных событиях, фестивалях и международных соревнованиях. Специализируюсь на высотных трюках, партнёрской акробатике и воздушной гимнастике.</p>
-                    <ul class="skills-list">
-                        <li>✓ Высотные трюки</li>
-                        <li>✓ Партнёрская акробатика</li>
-                        <li>✓ Воздушная гимнастика</li>
-                        <li>✓ Жонглирование</li>
-                        <li>✓ Балансирование</li>
-                        <li>✓ Постановочные выступления</li>
-                    </ul>
+            <div class="section-intro">
+                <span class="section-label">About me</span>
+                <h2>Stage presence rooted in movement and emotion</h2>
+                <p>From aerial flow to choreography, I create authentic performances that connect with audiences and bring brands to life.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-cards">
+                    <div class="info-card">
+                        <h3>10+ years on stage</h3>
+                        <p>Live shows for cruise lines, festivals and international productions.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Costa Cruises tours</h3>
+                        <p>High-level aerial acts and dance performances for premium cruise audiences.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Festival & brand shows</h3>
+                        <p>Creative choreography for events, brand activations and special projects.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Choreography & classes</h3>
+                        <p>Workshops, routines and creative direction for solo and group performers.</p>
+                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='400'%3E%3Crect fill='%2328a745' width='350' height='400'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='20' font-family='Arial'%3EПортрет акробата%3C/text%3E%3C/svg%3E" alt="Портрет">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='450' height='540'%3E%3Crect fill='%23000000' width='450' height='540'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='%23ffffff' font-size='24' font-family='Arial'%3EKateryna%20portrait%3C/text%3E%3C/svg%3E" alt="Kateryna portrait">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery/Portfolio -->
-    <section id="gallery" class="gallery">
+    <!-- Photo Section -->
+    <section id="photo" class="video-section">
         <div class="container">
-            <h2>Портфолио</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23ff6b6b' width='300' height='300'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='18' font-family='Arial'%3EТрюк 1%3C/text%3E%3C/svg%3E" alt="Трюк 1">
-                    <h3>Высотный трюк</h3>
+            <div class="section-intro">
+                <span class="section-label">Photo</span>
+                <h2>Video showreel</h2>
+                <p>Live performance clips and stage moments captured from aerial, pole and dance projects.</p>
+            </div>
+            <div class="video-rotator">
+                <video id="video-player" autoplay muted loop playsinline>
+                    <source src="videos/video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-placeholder" id="placeholder-2" style="display: none;">
+                    <div class="placeholder-content">Video 2 (add video-2.mp4)</div>
                 </div>
-                <div class="gallery-item">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%234ecdc4' width='300' height='300'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='18' font-family='Arial'%3EТрюк 2%3C/text%3E%3C/svg%3E" alt="Трюк 2">
-                    <h3>Партнёрская акробатика</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%2345b7d1' width='300' height='300'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='18' font-family='Arial'%3EТрюк 3%3C/text%3E%3C/svg%3E" alt="Трюк 3">
-                    <h3>Воздушная гимнастика</h3>
-                </div>
-                <div class="gallery-item">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f9ca24' width='300' height='300'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.3em' fill='white' font-size='18' font-family='Arial'%3EТрюк 4%3C/text%3E%3C/svg%3E" alt="Трюк 4">
-                    <h3>Балансирование</h3>
+                <div class="video-placeholder" id="placeholder-3" style="display: none;">
+                    <div class="placeholder-content">Video 3 (add video-3.mp4)</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="services">
+    <!-- Performance Section -->
+    <section id="performance" class="performance">
         <div class="container">
-            <h2>Мои услуги</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🎭</div>
-                    <h3>Корпоративные события</h3>
-                    <p>Впечатляющие трюки для конференций, праздников и деловых мероприятий</p>
+            <div class="section-intro">
+                <span class="section-label">Performance</span>
+                <h2>Stage disciplines</h2>
+                <p>Crafted acts for solo and group formats in dance, aerial and live choreography.</p>
+            </div>
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <h3>Pole dance</h3>
+                    <p>Strong, fluid and expressive bodywork for theatrical and festival stages.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🎪</div>
-                    <h3>Уличные выступления</h3>
-                    <p>Развлечение для фестивалей, ярмарок и массовых мероприятий</p>
+                <div class="performance-card">
+                    <h3>Hoop dance</h3>
+                    <p>Dynamic hoop movement with rhythmic transitions and aerial flow.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">📹</div>
-                    <h3>Постановочные трюки</h3>
-                    <p>Трюки для фильмов, клипов и рекламных проектов</p>
+                <div class="performance-card">
+                    <h3>Silks</h3>
+                    <p>High-impact aerial silks choreography with graceful ascents and drops.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">👥</div>
-                    <h3>Обучение</h3>
-                    <p>Мастер-классы и тренировки для начинающих акробатов</p>
+                <div class="performance-card">
+                    <h3>Solo dance</h3>
+                    <p>Personal, emotive acts shaped around your stage concept and music.</p>
+                </div>
+                <div class="performance-card">
+                    <h3>Group dance</h3>
+                    <p>Collective choreography and production for ensemble performances.</p>
                 </div>
             </div>
         </div>
@@ -125,19 +155,19 @@
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <h2>Отзывы клиентов</h2>
+            <h2>Client testimonials</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p>"Потрясающее выступление! Все гости были в восторге от трюков Владимира."</p>
-                    <strong>— Иван Сидоров, организатор события</strong>
+                    <p>"Amazing performance! All guests were thrilled by the acrobatic moments."</p>
+                    <strong>— Ivan Sidorov, event producer</strong>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Профессионал своего дела. Безопасность и качество выполнения на высочайшем уровне."</p>
-                    <strong>— Мария Петрова, режиссёр</strong>
+                    <p>"A true professional. The safety and execution were outstanding."</p>
+                    <strong>— Maria Petrova, director</strong>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Лучший выбор для нашего корпоративного события. Спасибо за настоящий праздник!"</p>
-                    <strong>— Дмитрий Иванов, CEO компании</strong>
+                    <p>"The best choice for our corporate event. Thank you for an unforgettable show!"</p>
+                    <strong>— Dmitry Ivanov, CEO</strong>
                 </div>
             </div>
         </div>
@@ -146,13 +176,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Свяжитесь со мной</h2>
+            <h2>Contact me</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Контактная информация</h3>
-                    <p><strong>Email:</strong> vladimir@acrobat.ru</p>
-                    <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
-                    <p><strong>Город:</strong> Москва</p>
+                    <h3>Contact information</h3>
+                    <p><strong>Email:</strong> kateryna@example.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Location:</strong> Worldwide</p>
                     <div class="social-links">
                         <a href="#" class="social-btn">Instagram</a>
                         <a href="#" class="social-btn">Facebook</a>
@@ -160,10 +190,10 @@
                     </div>
                 </div>
                 <form class="contact-form" onsubmit="handleFormSubmit(event)">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Ваш email" required>
-                    <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your email" required>
+                    <textarea placeholder="Your message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send message</button>
                 </form>
             </div>
         </div>
@@ -172,7 +202,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Владимир Петров - Профессиональный акробат. Все права защищены.</p>
+            <p>&copy; 2026 Kateryna Kolesnykova — Performance Artist. All rights reserved.</p>
         </div>
     </footer>
 
